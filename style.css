@@ -88,7 +88,7 @@ h3 { font-size: 1.15rem; }
 
 /* Hero */
 .hero {
-  background: var(--cream) url("assets/hero.png") right center / cover no-repeat;
+  background: var(--cream) url("assets/hero.png") right center / auto 100% no-repeat;
   min-height: 560px; display: flex; align-items: center; position: relative;
 }
 .hero::before {

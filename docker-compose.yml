@@ -10,7 +10,7 @@ services:
       - traefik.enable=true
       - traefik.http.routers.21dias.rule=Host(`21dias.juliadodigital.com.br`)
       - traefik.http.routers.21dias.entrypoints=websecure
-      - traefik.http.routers.21dias.tls.certresolver=letsencrypt
+      - traefik.http.routers.21dias.tls.certresolver=le
       - traefik.http.services.21dias.loadbalancer.server.port=80
 
 networks:

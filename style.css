@@ -145,18 +145,23 @@ h3 { font-size: 1.15rem; }
 .oferta__img img { width: 100%; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.18)); }
 .oferta__content h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin-bottom: 1rem; }
 .oferta__content > p { font-size: 0.95rem; margin-bottom: 1.5rem; }
-.oferta__bottom { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; flex-wrap: wrap; }
-.checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.6rem; font-size: 0.95rem; }
+.oferta__bottom { display: block; }
+.checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1.5rem; margin-bottom: 1.5rem; }
+.checklist li { position: relative; padding-left: 2rem; font-size: 0.95rem; }
 .checklist li::before {
   content: ""; position: absolute; left: 0; top: 2px; width: 20px; height: 20px; border-radius: 50%;
   background: var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L19 7'/%3E%3C/svg%3E") center / 11px no-repeat;
 }
-.oferta__cta { text-align: center; padding: 1.25rem 1.5rem; border: 1px solid var(--gold-light); border-radius: 12px; background: var(--cream); }
-.oferta__valor { display: flex; flex-direction: column; align-items: center; margin-bottom: 0.9rem; }
+.oferta__cta {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  padding: 1.25rem 1.5rem; border: 1px solid var(--gold-light); border-radius: 12px; background: var(--cream);
+}
+.oferta__valor { display: flex; flex-direction: column; align-items: flex-start; margin: 0; }
 .oferta__label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.2rem; }
-.oferta__preco { font-family: var(--body); font-weight: 700; font-size: 3.6rem; line-height: 1; color: var(--navy); letter-spacing: -0.02em; }
-.oferta__preco sup { font-size: 1rem; font-weight: 600; vertical-align: top; position: relative; top: 0.55rem; margin-right: 0.2rem; letter-spacing: 0; }
-.oferta__cta small { display: block; margin-top: 0.6rem; font-size: 0.7rem; color: var(--muted); }
+.oferta__preco { font-family: var(--body); font-weight: 700; font-size: 3.4rem; line-height: 1; color: var(--navy); letter-spacing: -0.02em; }
+.oferta__preco sup { font-size: 1rem; font-weight: 600; vertical-align: top; position: relative; top: 0.5rem; margin-right: 0.2rem; letter-spacing: 0; }
+.oferta__acao { text-align: center; }
+.oferta__cta small { display: block; margin-top: 0.5rem; font-size: 0.7rem; color: var(--muted); }
 
 /* FAQ */
 .faq { background: var(--cream); padding-top: 2rem; }
@@ -227,6 +232,8 @@ h3 { font-size: 1.15rem; }
   .passo { border-right: 0 !important; }
   .material img { height: 200px; }
   .oferta { padding: 1.5rem; }
-  .oferta__bottom { flex-direction: column; align-items: stretch; }
+  .checklist { grid-template-columns: 1fr; }
+  .oferta__cta { flex-direction: column; align-items: center; text-align: center; }
+  .oferta__valor { align-items: center; }
   .footer__inner { flex-direction: column; gap: 0.6rem; }
 }

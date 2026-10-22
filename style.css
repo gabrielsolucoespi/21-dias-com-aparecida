@@ -77,9 +77,7 @@ h3 { font-size: 1.15rem; }
 }
 .header.is-scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
 .header__inner { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
-.logo { display: flex; flex-direction: column; line-height: 1; }
-.logo__title { font-family: var(--serif); font-size: 1.7rem; color: var(--navy); font-weight: 500; }
-.logo__sub { font-size: 0.55rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--navy); margin-top: 3px; }
+.logo img { height: 58px; width: auto; display: block; }
 .nav { display: flex; align-items: center; gap: 2rem; font-size: 0.9rem; color: var(--navy); }
 .nav a:not(.btn):hover { color: var(--gold); }
 .nav__cta { text-transform: none; letter-spacing: 0; font-size: 0.8rem; margin-left: 1rem; }
@@ -211,6 +209,7 @@ h3 { font-size: 1.15rem; }
 
 @media (max-width: 720px) {
   .menu-toggle { display: flex; }
+  .logo img { height: 44px; }
   .nav {
     position: absolute; top: 100%; left: 0; right: 0; background: var(--cream);
     flex-direction: column; align-items: flex-start; padding: 1rem 1.5rem 1.5rem; gap: 1rem;

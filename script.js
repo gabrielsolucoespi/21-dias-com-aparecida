@@ -25,3 +25,8 @@ document.querySelectorAll('.accordion details').forEach(d => {
     if (d.open) document.querySelectorAll('.accordion details[open]').forEach(o => { if (o !== d) o.open = false; });
   });
 });
+
+// Meta Pixel: clique nos botões de compra
+document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(a => {
+  a.addEventListener('click', () => { if (window.fbq) fbq('track', 'InitiateCheckout'); });
+});

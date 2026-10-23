@@ -158,6 +158,7 @@ h3 { font-size: 1.15rem; }
 }
 .oferta__valor { display: flex; flex-direction: column; align-items: flex-start; margin: 0; }
 .oferta__label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.2rem; }
+.oferta__label s { color: #b55; text-decoration-thickness: 1.5px; }
 .oferta__preco { font-family: var(--body); font-weight: 700; font-size: 3.4rem; line-height: 1; color: var(--navy); letter-spacing: -0.02em; }
 .oferta__preco sup { font-size: 1rem; font-weight: 600; vertical-align: top; position: relative; top: 0.5rem; margin-right: 0.2rem; letter-spacing: 0; }
 .oferta__acao { text-align: center; }
